@@ -1,0 +1,2 @@
+# Garbage_Collector_Robot
+For the final project in my Electronics Design Lab course, we created a robot that uses a pixycam to identify items as "garbage."  Upon recognizing these objects, it will move towards it until it is in range of the robot's ultrasonic proximity sensor.  At which point the robot captures the object by closing two servo pincers.  While approaching the object, the robot stores each movement it makes in a LIFO, and it uses this stack to return to its starting space once it has collected the object.
