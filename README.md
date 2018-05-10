@@ -1,2 +1,6 @@
 # Garbage_Collector_Robot
 For the final project in my Electronics Design Lab course, we created a robot that uses a pixycam to identify items as "garbage."  Upon recognizing these objects, it will move towards it until it is in range of the robot's ultrasonic proximity sensor.  At which point the robot captures the object by closing two servo pincers.  While approaching the object, the robot stores each movement it makes in a LIFO, and it uses this stack to return to its starting space once it has collected the object.
+
+Collected here is the main Arduino file "Final.ino" which contains all of the code unique to this project.  This program has a dependancy on the "pixy.h" library, which it uses to get the position of the recognized objects.  In this file there is the full LIFO implementation, the control code to center the robot on, and to approach, objects, the code to control the servo arms, and the code to measure the distance from the robot to the object.
+
+Also included in this directory is the "EDLBot.h" header file.  This file contains all of the code we previously defined in the class. This primarily consists of programs to move the robot forward, backward, turn left and turn right.  It also contains the test functions used in class, which make the robot rotate 360 degrees in both directions, or move two feet and return to its starting space.
